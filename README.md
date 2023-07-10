@@ -1,1 +1,1 @@
-# simon_says_1.5
+# simon_says_game

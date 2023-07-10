@@ -1,0 +1,225 @@
+
+/* Global settings */
+body {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #011F3F;
+}
+
+.header-text-container {
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+
+@media (max-width: 600px) {
+    .header-text-container {
+        height: 130px;
+    }
+}
+
+#header-text {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    margin: 3%;
+    color: #FEF2BF;
+}
+
+@media(max-width: 1000px) {
+  #header-text {
+    font-size: 1.8rem;
+  }
+}
+
+h2 {
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  margin:  0;
+  color: #FEF2BF;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+    touch-action: manipulation;
+}
+
+@media (max-width: 600px) {
+    .container {
+        height:87vh;
+    }
+}
+
+/* Button container settings */
+.buttons-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 600px) {
+    .buttons-container {
+        height: 340px;
+    }
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.button-container {
+  padding: 30px;
+}
+
+/* Button settings */
+.button {
+    height: 200px;
+    width: 200px;
+    border: black 10px solid;
+    border-radius: 20%;
+    margin: 30px;
+    touch-action: manipulation;
+    transition: all 0.15s;
+}
+
+/*.button-pressed {*/
+/*    box-shadow: 0 0 20px white;*/
+/*    background-color: grey;*/
+/*}*/
+
+.green-button {
+    background-color: #2ECC40;
+}
+
+/*.green-button-hover {*/
+/*.green-button:hover {*/
+/*    background-color: #259633;*/
+/*    box-shadow: 0 0 50px #2ECC40;*/
+/*}*/
+
+.green-button-active {
+    background-color: #1b6b26;
+    box-shadow: 0 0 50px #2ECC40;
+    transform: scale(0.97);
+}
+
+.green-button-flash {
+    background-color: #000000;
+}
+
+.red-button {
+    background-color: #FF4136;
+}
+
+/*.red-button-hover {*/
+/*.red-button:hover {*/
+/*    background-color: #c0322c;*/
+/*    box-shadow: 0 0 50px #FF4136;*/
+/*}*/
+
+.red-button-active {
+    background-color: #7a201d;
+    box-shadow: 0 0 50px #FF4136;
+    transform: scale(0.97);
+}
+
+.yellow-button {
+    background-color: #FFDC00;
+}
+
+/*.yellow-button-hover {*/
+/*.yellow-button:hover {*/
+/*    background-color: #c2b100;*/
+/*    box-shadow: 0 0 50px #FFDC00;*/
+/*}*/
+
+.yellow-button-active {
+    background-color: #7a6f00;
+    box-shadow: 0 0 50px #FFDC00;
+    transform: scale(0.97);
+}
+
+.blue-button {
+    background-color: #0074D9;
+}
+
+/*.blue-button-hover {*/
+/*.blue-button:hover {*/
+/*    background-color: #0059b3;*/
+/*    box-shadow: 0 0 50px #0074D9;*/
+/*}*/
+
+.blue-button-active {
+    background-color: #003366;
+    box-shadow: 0 0 50px #0074D9;
+    transform: scale(0.97);
+}
+
+.light-up {
+    box-shadow: 0 0 70px #ffffff;
+}
+
+.light-up-green {
+    box-shadow: 0 0 100px #2ECC40;
+}
+
+.light-up-red {
+    box-shadow: 0 0 100px #FF4136;
+}
+
+@media (max-width: 600px) {
+    .light-up-green {
+        box-shadow: 0 0 50px #2ECC40;
+    }
+
+    .light-up-red {
+        box-shadow: 0 0 50px #FF4136;
+    }
+
+    .light-up {
+        box-shadow: 0 0 50px #ffffff;
+    }
+}
+
+@media(max-width: 600px) {
+  .button {
+      height: 150px;
+      width: 150px;
+      transition: all 0.05s;
+  }
+
+  .button {
+      margin: 10px;
+  }
+}
+
+/* Level indicator settings */
+.level-indicator {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 5%;
+    height: 150px;
+}
+
+@media (max-width: 600px) {
+    #level-text {
+        font-size: 1.5rem;
+    }
+}
