@@ -166,7 +166,7 @@ function next_level() {
     for (let i = 0; i < current_level; i++) {
         setTimeout(function() {
             light_up_button(game_sequence[i]);
-        }, 600 + (i * 600));
+        }, 700 + (i * 700));
     }
     
     // setTimeout(function() {
@@ -190,9 +190,9 @@ function light_up_button(sequence_index) {
         $("#" + button_to_light_up).addClass(light_up_class);
         setTimeout(function() {
             $("#" + button_to_light_up).removeClass(light_up_class);
-        }, 500);
+        }, 600);
         
-    }, 500);
+    }, 600);
     
     // $("#" + button_to_light_up).addClass(light_up_class);
     // setTimeout(function() {
