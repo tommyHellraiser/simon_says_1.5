@@ -8,39 +8,6 @@ body {
   background-color: #011F3F;
 }
 
-.header-text-container {
-    display: flex;
-    align-items: center;
-    height: 200px;
-}
-
-@media (max-width: 600px) {
-    .header-text-container {
-        height: 130px;
-    }
-}
-
-#header-text {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 3rem;
-    margin: 3%;
-    color: #FEF2BF;
-}
-
-@media(max-width: 1000px) {
-  #header-text {
-    font-size: 1.8rem;
-  }
-}
-
-h2 {
-  padding: 0;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 2rem;
-  margin:  0;
-  color: #FEF2BF;
-}
-
 .container {
     display: flex;
     flex-direction: column;
@@ -56,6 +23,54 @@ h2 {
     }
 }
 
+/* Text configuration */
+.header-text-container {
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+
+#header-text {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    margin: 3%;
+    color: #FEF2BF;
+}
+
+h2 {
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  margin:  0;
+  color: #FEF2BF;
+}
+
+.level-indicator {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 5%;
+    height: 150px;
+}
+
+@media (max-width: 600px) {
+    #level-text {
+        font-size: 1.5rem;
+    }
+
+    .header-text-container {
+        height: 130px;
+    }
+}
+
+@media(max-width: 1000px) {
+    #header-text {
+        font-size: 1.8rem;
+    }
+}
+
 /* Button container settings */
 .buttons-container {
     display: flex;
@@ -66,12 +81,6 @@ h2 {
     align-items: center;
     margin: 0;
     padding: 0;
-}
-
-@media (max-width: 600px) {
-    .buttons-container {
-        height: 340px;
-    }
 }
 
 .button-row {
@@ -96,20 +105,9 @@ h2 {
     transition: all 0.15s;
 }
 
-/*.button-pressed {*/
-/*    box-shadow: 0 0 20px white;*/
-/*    background-color: grey;*/
-/*}*/
-
 .green-button {
     background-color: #2ECC40;
 }
-
-/*.green-button-hover {*/
-/*.green-button:hover {*/
-/*    background-color: #259633;*/
-/*    box-shadow: 0 0 50px #2ECC40;*/
-/*}*/
 
 .green-button-active {
     background-color: #1b6b26;
@@ -125,12 +123,6 @@ h2 {
     background-color: #FF4136;
 }
 
-/*.red-button-hover {*/
-/*.red-button:hover {*/
-/*    background-color: #c0322c;*/
-/*    box-shadow: 0 0 50px #FF4136;*/
-/*}*/
-
 .red-button-active {
     background-color: #7a201d;
     box-shadow: 0 0 50px #FF4136;
@@ -141,12 +133,6 @@ h2 {
     background-color: #FFDC00;
 }
 
-/*.yellow-button-hover {*/
-/*.yellow-button:hover {*/
-/*    background-color: #c2b100;*/
-/*    box-shadow: 0 0 50px #FFDC00;*/
-/*}*/
-
 .yellow-button-active {
     background-color: #7a6f00;
     box-shadow: 0 0 50px #FFDC00;
@@ -156,12 +142,6 @@ h2 {
 .blue-button {
     background-color: #0074D9;
 }
-
-/*.blue-button-hover {*/
-/*.blue-button:hover {*/
-/*    background-color: #0059b3;*/
-/*    box-shadow: 0 0 50px #0074D9;*/
-/*}*/
 
 .blue-button-active {
     background-color: #003366;
@@ -182,6 +162,17 @@ h2 {
 }
 
 @media (max-width: 600px) {
+    .buttons-container {
+        height: 340px;
+    }
+
+    .button {
+        height: 150px;
+        width: 150px;
+        transition: all 0.05s;
+        margin: 10px;
+    }
+
     .light-up-green {
         box-shadow: 0 0 50px #2ECC40;
     }
@@ -192,34 +183,5 @@ h2 {
 
     .light-up {
         box-shadow: 0 0 50px #ffffff;
-    }
-}
-
-@media(max-width: 600px) {
-  .button {
-      height: 150px;
-      width: 150px;
-      transition: all 0.05s;
-  }
-
-  .button {
-      margin: 10px;
-  }
-}
-
-/* Level indicator settings */
-.level-indicator {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0 5%;
-    height: 150px;
-}
-
-@media (max-width: 600px) {
-    #level-text {
-        font-size: 1.5rem;
     }
 }
