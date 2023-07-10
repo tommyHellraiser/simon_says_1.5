@@ -161,11 +161,19 @@ function next_level() {
     player_sequence = [];
     player_sequence_index = 0;
     light_up_all_buttons("light-up-green");
-    setTimeout(function() {
-        current_level++;
-        set_text_from_level_counter(current_level);
-        light_up_button(game_sequence[current_level - 1]);    
-    },300);
+    current_level++;
+    set_text_from_level_counter(current_level);
+    for (let i = 0; i < current_level; i++) {
+        setTimeout(function() {
+            light_up_button(game_sequence[i]);
+        }, 600 + (i * 600));
+    }
+    
+    // setTimeout(function() {
+    //     current_level++;
+    //     set_text_from_level_counter(current_level);
+    //     light_up_button(game_sequence[current_level - 1]);    
+    // },300);
 }
 
 function light_up_button(sequence_index) {
