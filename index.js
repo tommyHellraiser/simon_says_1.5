@@ -78,7 +78,9 @@ function main_game_logic(button) {
 
     player_sequence.push(button_colors.indexOf(button_pressed));
 
-    play_audio_from_button(button_pressed, true);
+    if (window_width > 600) {
+        play_audio_from_button(button_pressed, true);
+    }
 
     button_animate_press(button_pressed);
 
@@ -172,7 +174,10 @@ function light_up_button(sequence_index, play_audio) {
     setTimeout(function() {
         //$("#" + button_to_light_up).fadeIn(200).fadeOut(200).fadeIn(200).fadeOut(200).fadeIn(200);
         if (play_audio) {
-            play_audio_from_button(button_to_light_up);
+
+            if (window_width > 600) {
+                play_audio_from_button(button_to_light_up);
+            }
         }
         $("#" + button_to_light_up).addClass(light_up_class);
         setTimeout(function() {
